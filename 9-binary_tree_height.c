@@ -11,8 +11,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
 {
 	if (tree)
 	{
-		unsigned int mos;
-		unsigned int pau;
+		size_t mos;
+		size_t pau;
 
 		mos = tree->left ? 1 + binary_tree_height(tree->left) : 0;
 		pau = tree->right ? 1 + binary_tree_height(tree->right) : 0;
